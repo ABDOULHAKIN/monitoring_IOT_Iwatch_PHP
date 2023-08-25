@@ -1,0 +1,90 @@
+/* Style pour le conteneur de chaque module */
+.module-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 170px 1fr;
+    gap: 10px; 
+    align-items: center; 
+    margin-bottom: 20px;
+    max-width: 0; 
+    padding: 20px;
+    border-radius: 5px; 
+    padding: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.titrefonctionnnement{
+    text-align: center;
+}
+
+/* Style pour le conteneur du graphique */
+.chart-container {
+  height: 245px;
+    width: 400px;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* Style pour les informations du module */
+.module-info {
+    text-align: left;
+    height: 245px;
+}
+
+/* Style pour le titre des informations du module */
+.module-info h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les informations du module */
+.module-info p {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* Style pour le conteneur global des modules */
+.scroll-container {
+  
+   margin-left: 200px;
+   width: 900px;
+    overflow-y: auto; /* Active la barre de défilement verticale si nécessaire */
+    border: 1px solid #ddd; /* Bordure pour le conteneur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-color: #1d1b31; /* Couleur de fond */
+    padding: 10px; /* Espace interne */
+    height: 80vh;
+  }
+  .scroll-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Effet d'ombre accentuée au survol */
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f9f9f9;
+  }
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #1d1b31;
+    border-radius: 4px;
+  }
+  
+  .module-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 20px; /* Espacement entre les éléments de la grille */
+  }
+  
+  /* Style pour les éléments de la grille */
+  .module-grid > div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  

@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.global {
+  width: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  position: relative;
+  margin: 35px auto; 
+}
+
+/* Style pour le titre du formulaire */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Style pour le bouton de retour */
+.back {
+  position: absolute; 
+  top: 0px; 
+  left: -150px; 
+  margin: 19px; 
+}
+
+/* Style pour le bouton de retour (icône) */
+.boutton {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Style pour le bouton de retour (icône) au survol */
+.boutton:hover {
+  color: #888;
+}
+
+/* Conteneur pour chaque champ de saisie */
+.input-container {
+  margin-bottom: 20px;
+}
+
+/* Style pour les titres des champs */
+.titreinput {
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 1px;
+  color: #333;
+  /* Ajuster la largeur des titres */
+  width: 150px;
+}
+
+
+
+/* Style pour le champ de saisie */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+}
+
+
+/*Test d'un info bulle*/
+.input-container {
+  position: relative;
+}
+
+.info-icon {
+  position: absolute;
+  right: -55px;
+  top: 6px;
+  font-size: 20px;
+  color: #0b0a0a;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.info-icon::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  padding: 5px;
+  background-color: #6e6e6e;
+  color: #ffffff;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.info-icon:hover::before {
+  display: block;
+}
+
+
+
+/* Style pour le bouton "Ajouter" */
+.buttonsubmit {
+  width: 100%;
+  padding: 12px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style pour le bouton "Ajouter" au survol */
+.buttonsubmit:hover {
+  background-color: #ddd;
+}
+
+  /* Réduire la taille de police pour les erreurs */
+  .error-message {
+    font-size: 12px;
+  }
+  
+  /* Optionnel : ajouter une marge en bas pour les messages d'erreur */
+  .error-message:last-child {
+    margin-bottom: 10px;
+  }
+
+  .error-message {
+    background-color: #ffc0cb;
+    color: #ff4500;
+    padding: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    text-align: center; /* Ajoutez cette propriété pour centrer le message d'erreur */
+}
+
+
+/**********************************************************************************************************************************************/
+/*Le systeme de checkbox*/
+
+/* Style pour les cases à cocher */
+.checkbox {
+  width: auto;
+  margin-right: 5px;
+  max-width: 2px;
+}
+#temperature_module, #vitesse_module, #humidite_module{
+  border: 1px solid black;
+}
+
+/* Style pour la case cochée */
+.checkbox:checked {
+  background-color: #007bff;
+}
+
+/* Style pour le conteneur de la case à cocher (optionnel) */
+.divinput {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
